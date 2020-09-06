@@ -1,0 +1,62 @@
+<html>
+   <head>
+      <title>Million Dolar Game</title>
+
+   </head>
+   <body>
+<link rel="stylesheet" type="text/css" href="estilo.css">
+
+<br>
+<center><font size="20">¿Quién Quiere ser Millonario?</font></center>
+
+
+<div id="container"></div> 
+        
+        <div class="emergente">
+        <div class="t2">     
+        <p>¿Cuántos meses tienen 28 días?</p>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br> 
+        <div class="boton mayor">Todos</div>
+        <div class="boton menor2">5</div>
+        <div class="boton menor">4</div>
+        <div class="boton menor1">Febrero</div>
+        <div class="Stars6"></div>
+        <div class="Stars7"></div>
+        <div class="Stars8"></div>
+        <div class="Stars9"></div>
+</div>
+
+<script type="text/javascript">
+  window.onload = init;
+    function init(){
+var aleatorio = Math.round(Math.random()*7);
+        document.querySelector(".emergente").style.display="block";
+        document.querySelector("#container").style.opacity="1";
+        document.querySelector(".emergente .menor").addEventListener("click",adios);
+        document.querySelector(".emergente .menor1").addEventListener("click",adios);
+        document.querySelector(".emergente .menor2").addEventListener("click",adios);
+        document.querySelector(".emergente .mayor").addEventListener("click",hola1);
+
+    }
+        
+    function adios(){
+          window.location.href = "Fail.html";}    
+        function hola1(){
+  
+        document.querySelector(".emergente").style.display="none";
+        document.querySelector("#container").style.opacity="1";
+        var r;
+        r=r+1;
+
+    window.location.href = "Pregunta7b.html";
+    }
+</script>
+
+
+</body>
+</html>

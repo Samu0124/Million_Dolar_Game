@@ -1,0 +1,41 @@
+<html>
+   <head>
+      <title>Million Dolar Game</title>
+
+   </head>
+   <body>
+
+
+
+<script type="text/javascript">
+function ejemplo2() {
+var aleatorio = Math.round(Math.random()*8);
+</script>
+
+<br>
+<center><font size="20">¿En que año se descubrió América?</font></center>
+
+<INPUT onclick=F() type=button value="1592">
+<INPUT onclick=F() type=button value="1493">
+<INPUT onclick=Play() type=button value="1492">
+<INPUT onclick=F() type=button value="1491">
+
+
+<script type="text/javascript">
+function Play() {
+var aleatorio = Math.round(Math.random()*1);
+
+if (aleatorio == 0) {
+  window.location.href = "Pregunta2.html";}
+if (aleatorio == 1) {
+  window.location.href = "Pregunta4.html";}
+}
+</script>
+
+<script type="text/javascript">
+function F() {
+	  window.location.href = "Fail.html";}	
+</script>
+
+</body>
+</html>
